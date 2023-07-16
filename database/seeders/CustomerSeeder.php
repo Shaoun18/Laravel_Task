@@ -17,12 +17,11 @@ class CustomerSeeder extends Seeder
     public function run()
     {
         $faker = Faker::create();
-        for($i=1; $i<=50; $i++){
+        for($i=1; $i<=20000; $i++){
             $customer = new Customer();
             $customer->name = $faker->name;
-            $customer->email = $faker->email;
+            $customer->email =  $faker->unique()->safeEmail;
             $customer->mobile = $faker->phoneNumber;
-            $customer->date_of_birth = $faker->date;
             $customer->address = $faker->address;
             $customer->password = bcrypt($faker->password);
             $customer->save();

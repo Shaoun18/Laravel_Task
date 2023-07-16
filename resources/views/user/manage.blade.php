@@ -22,7 +22,6 @@
                                     <th>Username</th>
                                     <th>Email</th>
                                     <th>Phone Number</th>
-                                    <th>Date of Birth</th>
                                     <th>Address</th>
                                     <th>Action</th>
                                 </tr>
@@ -34,7 +33,6 @@
                                         <td>{{$user->name}}</td>
                                         <td>{{$user->email}}</td>
                                         <td>{{$user->mobile}}</td>
-                                        <td>{{$user->date_of_birth}}</td>
                                         <td>{{$user->address}}</td>
                                         <td>
                                             <a href="{{route('user.edit', ['id' => $user->id])}}" class="btn btn-success btn-sm">

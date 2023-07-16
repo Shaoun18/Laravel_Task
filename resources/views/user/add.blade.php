@@ -37,12 +37,6 @@
                                     </div>
                                 </div>
                                 <div class="row mb-3">
-                                    <label class="col-md-3">Date of Birth</label>
-                                    <div class="col-md-9">
-                                        <input type="date" class="form-control" name="date_of_birth"/>
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
                                     <label class="col-md-3">Address</label>
                                     <div class="col-md-9">
                                         <input type="text" class="form-control" name="address">

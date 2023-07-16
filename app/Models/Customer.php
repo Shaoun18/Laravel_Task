@@ -16,7 +16,6 @@ class Customer extends Model
         self::$user->name = $request->name;
         self::$user->email = $request->email;
         self::$user->mobile = $request->mobile;
-        self::$user->date_of_birth = $request->date_of_birth;
         self::$user->address = $request->address;
         self::$user->password = bcrypt($request->password);
         self::$user->save();
@@ -27,7 +26,6 @@ class Customer extends Model
         self::$user->name = $request->name;
         self::$user->email = $request->email;
         self::$user->mobile = $request->mobile;
-        self::$user->date_of_birth = $request->date_of_birth;
         self::$user->address = $request->address;
         self::$user->save();
     }
